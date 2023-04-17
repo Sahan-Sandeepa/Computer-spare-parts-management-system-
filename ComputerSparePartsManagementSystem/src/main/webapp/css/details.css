@@ -1,0 +1,36 @@
+#btnLog{
+    
+    margin: 0;
+    display: flex;
+    display: table-column;
+    margin-left: 2%;
+    margin-top: 10px;
+    left: 500px;
+    width: 200px;
+    border-radius: 200px;
+    border:1px solid #ff4b2b;
+    background: #666666;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    
+    padding: 12px 45px;
+    text-transform: uppercase;
+    transition: transfrom 80ms ease-in-out;
+    margin-bottom:20px; 
+  }
+  #btnLog:hover{
+
+    border:1px solid #ff4b2b;
+    background: #ffffff;
+    color: darkorange;
+  }
+  button:active{
+
+      transform: scale(0.80);
+
+  }
+  button:focus{
+
+    outline: none;
+  }

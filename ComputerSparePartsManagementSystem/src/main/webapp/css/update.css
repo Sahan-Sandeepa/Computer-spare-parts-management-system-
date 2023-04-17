@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+   background:GhostWhite;
+    height: 115vh;
+    font-family: 'B612',sans-serif;
+  }
+  
+ 
+  #content {
+   max-width: 1000px;
+    height: 800px;
+    background: #f9f9f9;
+    position: relative;
+    margin: 0 auto;
+    top:10%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow:0 2px 2px rgba(0, 0, 0, 0.2),0 5px 5px rgba(0, 0,0, 0.2) ;
+    z-index: 3;
+    
+  }
+
+
+
+  #rightBox{
+    width: 100%;
+    height: 420px;
+    float: right;
+    position: relative;
+    z-index: 2;
+     margin-left:41% ;
+  }
+  
+  #rightBox::after{
+
+    content: "";
+    display:block;
+    background-image: url(../img/Background/BG-min.jpg);
+    background-size: cover;
+    background-repeat:no-repeat ;
+    width: 539px;
+    height: 980px;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    bottom: 0px;
+    left: -800px;
+    opacity: 0.9;
+    margin: auto;
+    z-index: -1;
+   }
+
+ 
+  
+  h1 {
+     position: relative;
+    color: #1b1b1b;  
+    font-size: 50px;
+    top: 0%;
+    left: 0px;
+    line-height: 0.9;
+    
+    
+  }
+
+
+  
+  #txtSign{
+    
+    position: relative;
+    color: #404040;  
+    font-size: 24px;
+    line-height: 0.9;
+    top: 0px;
+    left: 25px;
+    margin:25px ;
+    text-align: center;
+  }
+  .input{
+
+    padding: 10px;
+  }
+  .input input{
+
+    background: #f2f2f2;
+    border: none;
+    border-bottom: 2px solid silver;
+    padding: 12px 15px;
+    margin: 10px 0;
+    margin-left:105px ;
+    width: 80%;
+    height: 45px;
+    border-radius:7px ;
+    border-color: #333333;
+  }
+  input:focus{
+    outline: none;
+}
+   input:valid:focus{
+    border-color: chartreuse;
+  }
+  input:invalid:focus{
+    border-color: red;
+  }
+  
+ 
+  form{
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+   
+  }
+  select{
+
+    background: #eee;
+    border: none;
+    color: rgb(73, 73, 73);
+    margin-left:100px ;
+    width: 80%;
+    height: 30px;
+    border-radius:5px ;
+    margin-top:10px ;
+    margin-bottom: 10px;
+  }
+  #btnSign1{
+    
+     margin: 0;
+    display: flex;
+    display: table-column;
+    margin-left: 40%;
+    margin-top: 80px;
+    left: 500px;
+    width: 200px;
+    border-radius: 20px;
+    border:1px solid #ff4b2b;
+    background: #666666;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    
+    padding: 10px 30px;
+    text-transform: uppercase;
+    transition: transfrom 80ms ease-in-out;
+    margin-bottom:10px;  
+  }
+  #btnSign1:hover{
+
+   background-color: #B0E0E6;
+    border:1px solid #ff4b2b;
+    color: darkorange;
+  }
+
+#btnSign2{
+    
+     margin: 0;
+    display: flex;
+    display: table-column;
+    margin-left: 40%;
+    margin-top: 17px;
+    left: 500px;
+    width: 200px;
+    border-radius: 20px;
+    border:1px solid #ff4b2b;
+    background: #666666;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    
+    padding: 10px 30px;
+    text-transform: uppercase;
+    transition: transfrom 80ms ease-in-out;
+    margin-bottom:10px;  
+  }
+  #btnSign2:hover{
+
+   background-color: #800080;
+    border:1px solid #ff4b2b;
+    color: darkorange;
+  }
+
+ button:active{
+
+      transform: scale(0.80);
+
+  }
+  button:focus{
+
+    outline: none;
+  }
+
+
+  label{
+
+    margin: 2px;
+    padding-left: 5px;
+    font-size: 15px;
+    margin-left:100px ;
+    width: 80%;
+  }
+  #checkBox{
+
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  padding: 10px;
+  }
+
+  #showPass{
+
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  #error{
+
+    position:absolute;
+    margin-top:20px ;
+    top: 125%;
+    left:30%;
+    color: red;
+    font-size: 10px;
+    opacity: 1;
+   animation: anime 10s ;
+
+  }
+
+  @keyframes anime{
+
+    from {opacity: 1;}
+    50%{opacity: 0.8;}
+    to {opacity: 0;}
+  }
+#left{
+
+  float: left;
+  
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  right:  90%;
+  top:50%;
+}
+
+#fileToUpload{
+
+  background: none;
+    border: none;
+    border-bottom: 0;
+    padding: 0;
+    margin:  0;
+    margin-left:100px ;
+    width: 10;
+    height: 10;
+    border-radius:5px ;
+    top:250px;
+    position: relative;
+    right: 50px;
+    border-radius: 20px;
+    
+}
+
+
+#upload{
+  position: absolute;
+  top:300px;
+  right: 35%;
+  color: darkorange;
+  background-color:#ffffff;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+}
+#uimg{
+  
+  padding: 30px;
+  border-radius: 50%;
+
+  width:50px;
+  height:50px;
+  position: relative;
+}
+#up{
+
+  width:250px;
+  height:250px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#back{
+
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(0%) saturate(28%) hue-rotate(55deg) brightness(107%) contrast(107%);
+  z-index: 3;
+  position: relative;
+  left:30px;
+  top: 30px;
+  opacity: 0.5;
+}
+#back:hover{
+
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fa {
+ display:inline-block;
+ font:normal normal normal 14px/1 FontAwesome;
+ font-size:inherit;
+ text-rendering:auto;
+ -webkit-font-smoothing:antialiased;
+ -moz-osx-font-smoothing:grayscale
+}
+.fa-lg {
+ font-size:1.33333333em;
+ line-height:.75em;
+ vertical-align:-15%
+}
+.fa-2x {
+ font-size:2em
+}
+.fa-3x {
+ font-size:3em
+}
+.fa-4x {
+ font-size:4em
+}
+.fa-5x {
+ font-size:5em
+}
+.fa-fw {
+ width:1.28571429em;
+ text-align:center
+}
+.fa-ul {
+ padding-left:0;
+ margin-left:2.14285714em;
+ list-style-type:none
+}
+.fa-ul>li {
+ position:relative
+}
+.fa-li {
+ position:absolute;
+ left:-2.14285714em;
+ width:2.14285714em;
+ top:.14285714em;
+ text-align:center
+}
+.fa-li.fa-lg {
+ left:-1.85714286em
+}
+.fa-border {
+ padding:.2em .25em .15em;
+ border:solid .08em #eee;
+ border-radius:.1em
+}
+.fa-pull-left {
+ float:left
+}
+.fa-pull-right {
+ float:right
+}
+.fa.fa-pull-left {
+ margin-right:.3em
+}
+.fa.fa-pull-right {
+ margin-left:.3em
+}
+.pull-right,
+.pull-xs-right {
+ float:right
+}
+.pull-left,
+.pull-xs-left {
+ float:left
+}
+.fa.pull-left {
+ margin-right:.3em
+}
+.fa.pull-right {
+ margin-left:.3em
+}
+.fa-spin {
+ -webkit-animation:fa-spin 2s infinite linear;
+ animation:fa-spin 2s infinite linear
+}
+.fa-pulse {
+ -webkit-animation:fa-spin 1s infinite steps(8);
+ animation:fa-spin 1s infinite steps(8)
+}
+

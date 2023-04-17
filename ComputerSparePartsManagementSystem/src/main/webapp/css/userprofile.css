@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+#logo{
+
+    width: 205px;
+    height: 205px;
+    background-color: #F5FFFA;
+    position: relative;
+    margin: 0 auto;
+    left: 24.5%;
+    top:25px;
+    border-radius: 60%;
+    overflow: hidden;
+    box-shadow: 1px 1px 7px 7px rgba(0,0,0,0.25);
+    margin: 0 auto; 
+}
+
+#userlogo{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    top:20px;
+    padding: 25;
+}
+
+#detailstabel{
+
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top:0;
+    
+    left: -25%;
+    line-height: 20px;
+
+}
+
+table{
+
+  border-collapse: collapse;
+
+}
+
+.title{
+
+  color: #1b1b1b;
+  font-size: 20px;
+
+
+} 
+
+
+tr td{
+
+  border-bottom: solid #708090;
+  height: 20px;
+}
+#tabel{
+
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top:256px;
+    right: 100px;
+    
+    
+
+}
+h2{
+
+    color: #404040;
+    font-family: 'B612', sans-serif;
+}
+
+#sidemenulogo {
+
+    width: 40px;
+    height: 30px;
+    position: relative;
+    left: 20px;
+    top:20px;
+    
+}
+
+
+/*side menu*/
+
+.sidenav {
+
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    
+    top: 0;
+    left: -100px;
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+    transition: 0.45s ease-out;
+    padding-top: 67px;
+    
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #F8F8FF;
+    display: block;
+    transition: 0.3s;
+    animation-direction: reverse;
+  }
+  
+  .sidenav a:hover {
+    color: #cc3300;
+  }
+  
+  .sidenav .closebtn {
+    position: relative;
+    top: -35px;
+    
+    font-size: 40px;
+    margin-left: 145px;
+  }
+  
+  
+  @media screen and (max-height: 150px) {
+    .sidenav {padding-left: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  
